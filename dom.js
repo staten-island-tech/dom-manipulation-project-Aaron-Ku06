@@ -12,5 +12,4 @@ console.log(DOMSelectors.firstName.value);
 DOMSelectors.h2s.forEach(
     (el) => (el.textContent = DOMSelectors.firstName.value)
     );
-    
 });
