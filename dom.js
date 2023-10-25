@@ -12,5 +12,5 @@ console.log(DOMSelectors.firstName.value);
 DOMSelectors.h3s.forEach(
     (el) => (el.textContent = DOMSelectors.firstName.value)
     );
-    document.getElementById("form").reset();
+    
 });
