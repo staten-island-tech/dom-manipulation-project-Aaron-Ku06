@@ -14,3 +14,10 @@ DOMSelectors.h3s.forEach(
     );
     
 });
+DOMSelectors.resetbutton.addEventListener("click". function(vanish){
+    vanish.preventDefault();
+    DOMSelectors.h3s.forEach(
+        (el)=> el.textContent = "");
+            )
+    });
+    
