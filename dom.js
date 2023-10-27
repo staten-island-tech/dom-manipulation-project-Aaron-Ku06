@@ -10,14 +10,10 @@ DOMSelectors.form.addEventListener("submit", function(event){
 event.preventDefault();
 console.log(DOMSelectors.firstName.value);
 DOMSelectors.h3s.forEach(
-    (el) => (el.textContent = DOMSelectors.firstName.value)
+    (el) => el.textContent = DOMSelectors.firstName.value
     );
     
 });
-DOMSelectors.resetbutton.addEventListener("click". function(vanish){
-    vanish.preventDefault();
-    DOMSelectors.h3s.forEach(
-        (el)=> el.textContent = "");
-            )
-    });
+
+    
     
