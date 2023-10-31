@@ -15,5 +15,15 @@ DOMSelectors.h3s.forEach(
     
 });
 
+ul.addEventListener('click', (event) => {
+    if(event.target.tagName === 'BUTTON') {
+        const button = event.target;
+        const card = button.parentNode;
+        const container = card.parentNode;
+        if(button.textContent === 'remove'){
+            ul.removeChild();
+        }
+    }
+});
     
     
