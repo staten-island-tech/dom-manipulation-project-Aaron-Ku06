@@ -4,5 +4,5 @@ const main = document.querySelector('.main');
 const ul = document.querySelector('#monkeyCard')
 
 function createLi() {
-const
+const 
 })
