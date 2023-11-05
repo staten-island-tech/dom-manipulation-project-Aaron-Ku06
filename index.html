@@ -16,46 +16,31 @@
     <h1 class="website-title">Are You A Monkey?</h1>
     <section class="inputs">
       <form id="form">
-        <div action="" class="makeForm">
+        <div class="makeForm">
           <h2><label for="firstName">Enter First Name</label></h2>
-          <input type="text" name="firstName" class="first-name" />
+          <input type="text" id="firstName" class="first-name" required />
         </div>
-        <div action="" class="makeForm">
+        <div class="makeForm">
           <h2><label for="lastName">Enter Last Name</label></h2>
-          <input type="text" name="lastName" class="last-name" />
+          <input type="text" id="lastName" class="last-name" required />
         </div>
-        <div action="" class="makeForm">
+        <div class="makeForm">
           <h2><label for="intelligence">Enter Monkey Type</label></h2>
           <label for="monkey">Choose a monkey:</label>
-          <select name="membership" id="membership">
+          <select name="membership" id="membership" required>
             <option value="orangutan">Orangutan</option>
             <option value="chimpanzee">Chimpanzee</option>
-            <option value="Gorilla">Gorilla</option>
+            <option value="gorilla">Gorilla</option>
             <option value="proboscic">Proboscis</option>
-            <option value="Golden">Golden Snub Nosed Monkey</option>
+            <option value="golden">Golden Snub Nosed Monkey</option>
           </select>
         </div>
         <div>
-          <input type="submit" value="Submit" class="button">
+          <input type="submit" value="Submit" class="button" />
         </div>
       </form>
     </section>
-    <section class="display" id="display">
-      <div class="container">
-        <div class="card">
-          <img
-            src="Dragonoid.png"
-            alt="Dragonoid First Form"
-            class="card-img"
-            width="350px"
-          />
-          <h3></h3>
-          <h4></h4>
-          <p class="decision">You are a monkey</p>
-          <button class="button">Remove</button>
-        </div>
-      </div>
-    </section>
-    <script src="dom.js"></script>
+    <section class="display" id="display"></section>
+    <script src="monk.js"></script>
   </body>
 </html>
