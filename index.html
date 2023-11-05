@@ -13,45 +13,49 @@
     />
   </head>
   <body>
-    <div id="generator">
-<h1 class="website-title">Are You A Monkey?</h1>
-    <div class="inputs">
-      <form action="" id="makeForm">
-        <h2><label for="firstName">Enter First Name</label></h2>
-        <input type="text" name="firstName" class="first-name" />
-        <input type="submit" value="Click To Submit" id="submit" />
+    <h1 class="website-title">Are You A Monkey?</h1>
+    <section class="inputs">
+      <form id="form">
+        <div action="" class="makeForm">
+          <h2><label for="firstName">Enter First Name</label></h2>
+          <input type="text" name="firstName" class="first-name" />
+        </div>
+        <div action="" class="makeForm">
+          <h2><label for="lastName">Enter Last Name</label></h2>
+          <input type="text" name="lastName" class="last-name" />
+        </div>
+        <div action="" class="makeForm">
+          <h2><label for="intelligence">Enter Monkey Type</label></h2>
+          <label for="monkey">Choose a monkey:</label>
+          <select name="membership" id="membership">
+            <option value="orangutan">Orangutan</option>
+            <option value="chimpanzee">Chimpanzee</option>
+            <option value="Gorilla">Gorilla</option>
+            <option value="proboscic">Proboscis</option>
+            <option value="Golden">Golden Snub Nosed Monkey</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" value="Submit" class="button">
+        </div>
       </form>
-      <form action="" id="makeForm">
-        <h2><label for="lastName">Enter Last Name</label></h2>
-        <input type="text" name="lastName" class="last-name" />
-        <input type="submit" value="Click To Submit" id="submit" />
-      </form>
-      <form action="" id="makeForm">
-        <h2><label for="intelligence">Enter Monkey Type</label></h2>
-        <label for="monkey">Choose a monkey:</label>
-        <select name="membership" id="membership">
-          <option value="orangutan">Orangutan</option>
-          <option value="chimpanzee">Chimpanzee</option>
-          <option value="Gorilla">Gorilla</option>
-          <option value="proboscic">Proboscis</option>
-          <option value="Golden">Golden Snub Nosed Monkey</option>
-        </select>
-      </form>
-    </div>
-    <div class="container">
-      <div class="card">
-        <img
-          src="Dragonoid.png"
-          alt="Dragonoid First Form"
-          class="card-img"
-          width="350px"
-        />
-        <h3></h3>
-        <p class="decision">You are a monkey</p>
-        <button class="button">Remove</button>
+    </section>
+    <section class="display" id="display">
+      <div class="container">
+        <div class="card">
+          <img
+            src="Dragonoid.png"
+            alt="Dragonoid First Form"
+            class="card-img"
+            width="350px"
+          />
+          <h3></h3>
+          <h4></h4>
+          <p class="decision">You are a monkey</p>
+          <button class="button">Remove</button>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
     <script src="dom.js"></script>
   </body>
 </html>
