@@ -1,32 +1,27 @@
-.form {
+.container {
+  background-image: url(Background-Bakugan.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   font-family: "Alumni Sans Collegiate One", sans-serif;
 }
-.display-card {
+.card {
   width: 20%;
   height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0px 0px;
+  justify-content: space-between;
+  margin: 10px 29px;
   border-style: outset;
   border-radius: 10px;
   border-width: 8px;
   transition: all 0.5s;
-  font-size:50px;
-}
-
-.section{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.names{
-  margin: 0,0,0,0;
-  padding: 0,0,0,0;
+  font-size: 50px;
 }
 
 .button {
@@ -45,7 +40,9 @@
   box-shadow: 5px 5px #999;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {
+  background-color: #3e8e41;
+}
 
 .button:active {
   background-color: skyblue;
@@ -53,8 +50,57 @@
   transform: translateY(4px);
 }
 
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+.display-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 26%;
+  height: 35rem;
+  margin: 1rem auto;
+  background-color: black;
+  color: white;
+  align-items: center;
+  border-radius: 5rem;
+}
+
 .display-img {
-  width: 200px;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.remove {
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
+}
+
+.remove:hover{
+  cursor: pointer;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.website-title {
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -66,5 +112,4 @@
   .card {
     width: 60%;
   }
-
 }
